@@ -8,8 +8,8 @@ BASE_HOA = {
 #expect(add_character(:jetsons, "Astro")).to eq(["George", "Jane", "Judy", "Elroy", "Astro"])
 end
 def add_character(show, name)
-  add_character = BASE_HOA[:third_earthers] << "Snarf"
   BASE_HOA[:chipmunks] << "Dave"
+  BASE_HOA[:third_earthers] << "Snarf"
   BASE_HOA[:jetsons][4] = "astro"
   # Should return the array of the 'show' argument
 end
